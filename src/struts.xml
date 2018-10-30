@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+    <constant name="struts.devMode" value="true"/>
+    <!--<constant name="struts.action.excludePattern" value=".*Socket"/>-->
+
+    <package name="default" namespace="/" extends="struts-default">
+        <action name="register" class="com.sam.lowcarbon.Register" method="register"/>
+        <action name="checkphonebindqq" class="com.sam.lowcarbon.Register" method="checkPhoneBindQQ"/>
+        <action name="login" class="com.sam.lowcarbon.Login" method="login"/>
+        <action name="requestinformation" class="com.sam.lowcarbon.Request" method="requestInformation"/>
+        <action name="addfriend" class="com.sam.lowcarbon.AddFriend" method="addFriend"/>
+        <action name="searchuser" class="com.sam.lowcarbon.SearchUser" method="SearchUser"/>
+        <action name="friendlist" class="com.sam.lowcarbon.FriendList" method="friendList"/>
+        <action name="friendrank" class="com.sam.lowcarbon.FriendList" method="friendRank"/>
+        <action name="userinfo" class="com.sam.lowcarbon.UserInfo" method="userInfo"/>
+        <action name="position" class="com.sam.lowcarbon.UserInfo" method="position"/>
+        <action name="steps" class="com.sam.lowcarbon.UserInfo" method="steps"/>
+        <action name="querytext" class="com.sam.lowcarbon.RecommendFriend" method="QueryText"/>
+        <action name="getcontacts" class="com.sam.lowcarbon.RecommendFriend" method="getContacts"/>
+    </package>
+</struts>

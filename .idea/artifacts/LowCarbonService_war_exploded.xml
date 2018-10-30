@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="LowCarbonService:war exploded">
+    <output-path>$PROJECT_DIR$/../../apache-tomcat-8.5.16-windows-x64/apache-tomcat-8.5.16/webapps</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="LowCarbonService" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$USER_HOME$/Downloads/mysql-connector-java-5.1.46/mysql-connector-java-5.1.46-bin.jar" />
+          <element id="library" level="project" name="org.json" />
+          <element id="library" level="project" name="struts2" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../LowCarbon/mysql-connector-java-5.1.47/mysql-connector-java-5.1.47-bin.jar" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="LowCarbonService/web/Web" />
+    </root>
+  </artifact>
+</component>
